@@ -36,7 +36,6 @@ func main() {
 	if sign == "*" || sign == "/" {
 		if strings.Contains(inputArray[1], "\"") {
 			panic("Error2")
-			return
 		}
 	}
 
@@ -46,7 +45,7 @@ func main() {
 
 	var strCount1 = strings.Count(inputArray[0], "")
 	var strCount2 = strings.Count(inputArray[1], "")
-	if strCount1 > 11 || strCount2 > 11 {
+	if strCount1 > 10 || strCount2 > 10 {
 		panic("Error. Строка длинее 10 символов")
 	}
 
@@ -79,7 +78,6 @@ func main() {
 		result = inputArray[0][:newLen]
 	default:
 		panic("Error2")
-		return
 	}
 
 	var resultCount int
